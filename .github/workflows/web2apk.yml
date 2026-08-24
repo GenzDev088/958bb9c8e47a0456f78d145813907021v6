@@ -40,10 +40,6 @@ jobs:
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
 
-      - name: Install PWABuilder
-        run: |
-          npm install -g @pwa/pwabuilder
-
       - name: Download icon
         if: inputs.icon_url != ''
         run: |
